@@ -7,7 +7,7 @@ permalink: disclaimer
 ### Responsible for the content of this website:
 
 Daniel Wagenknecht<br/>
-[daniel@dwagenk.me](mailto:daniel@dwagenk.me)
+[dwagenk@mailbox.org](mailto:dwagenk@mailbox.org)
 
 ### Terms of Use
 
@@ -29,4 +29,4 @@ This website does not collect, store or process Personally Identifiable Informat
 ### Third Party Inclusion
 This website is hosted by [Github](https://www.github.com) using [Github Pages](https://help.github.com/articles/what-is-github-pages/). The Github Global Privacy Practices are available [here](https://help.github.com/articles/global-privacy-practices/)
 
-If you have any questions about any of the above, please contact me at [daniel@dwagenk.me](mailto:daniel@dwagenk.me)
+If you have any questions about any of the above, please contact me at [dwagenk@mailbox.org](mailto:dwagenk@mailbox.org)

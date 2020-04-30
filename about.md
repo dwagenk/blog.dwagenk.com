@@ -4,9 +4,13 @@ title: About
 permalink: /about/
 ---
 
-I'm an embedded systems software engineer living in Lüneburg, Germany. Maybe I'll write some more about myself later in time.
+I'm an embedded systems software engineer living in Lüneburg, Germany.
 
-The content of this blog is licensed as [CC-BY-SA-4.0](http://creativecommons.org/licenses/by-sa/4.0/) unless explicitly stated otherwise.
+I like to dive into projects and learn as I go. Self teaching, sometimes
+accompanied by having good mentors, is really the best way for me to learn
+something new. Besides tinkering with electronics and writing drivers and
+applications, I like bicycles, family-time and repairing broken stuff or
+extending it's usefulness in other ways.
 
 The content of this blog is licensed as
 [CC-BY-SA-4.0](http://creativecommons.org/licenses/by-sa/4.0/) unless

@@ -201,7 +201,7 @@ So to summarize, this is the section in my
 ```
 
 Feel free to contact me via [mail](mailto:dwagenk@mailbox.org) or
-[mastodon](https://fosstodon.org/@dwagenk) if you've got any notes on this post
+[mastodon](https://chaos.social/@dwagenk) if you've got any notes on this post
 or start a public discussion via this blogs [github issue
 tracker](https://github.com/dwagenk/blog.dwagenk.com/issues). Like I mentioned
 above, I've got more posts planned on _Nix_ and my printer/scanner, so if this

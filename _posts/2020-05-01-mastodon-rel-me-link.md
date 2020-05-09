@@ -24,7 +24,7 @@ and then linking back to your mastodon profile on that website with a
 `rel="me"` attribute.
 
 ```html
-<a href="https://fosstodon.org/@dwagenk" rel="me">My Mastodon Profile</a>
+<a href="https://chaos.social/@dwagenk" rel="me">My Mastodon Profile</a>
 ```
 
 One thing I didn't see mentioned anywhere: The link verification doesn't appear
@@ -40,11 +40,11 @@ this problem...
 ----
 
 This post is part of the
-[#15WeeksToBlog](https://fosstodon.org/web/timelines/tag/15WeeksToBlog)
+[#15WeeksToBlog](https://chaos.social/web/timelines/tag/15WeeksToBlog)
 challenge.<br/> Week 1/15, 2nd post this week.
 
 Feel free to contact me via [mail](mailto:dwagenk@mailbox.org) or
-[mastodon](https://fosstodon.org/@dwagenk) if you've got any notes on this post
+[mastodon](https://chaos.social/@dwagenk) if you've got any notes on this post
 or start a public discussion via this blogs [github issue
 tracker](https://github.com/dwagenk/blog.dwagenk.com/issues). You can also
 subscribe to the [RSS feed](/feed.xml) to stay tuned! 

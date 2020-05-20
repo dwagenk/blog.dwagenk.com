@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 
 I like to dive into problems to learn new skills, especially when
 it comes to technology and crafts. This led to a self-made cargo-bike (back on
-the road "soon", once the overdue maintenance is done) accompanied with some
+the road "soon", once the overdue maintenance is done) accompanied by some
 basic welding skills, but also knowledge of embedded systems, programming in C
 and configuring various software systems. 
 
@@ -32,7 +32,7 @@ _Nix_ is a functional approach to packaging software, and approaching system
 configuration. The OS is configured declaratively by writing config files,
 instead of changing the system in an iterative way. I've used both _apt_ and
 _pacman_ _Linux_ distros before and experienced problems regarding software
-dependencies and malfunctioning packages every now and then with them. I guess
+dependencies and malfunctioning packages now and then with them. Probably
 _NixOS_ will have some hurdles for me as well, but I'm more willing to dive
 into those, since whatever I do to mitigate those will be documented and
 version controlled in my system configuration and won't come back to haunt me
@@ -57,7 +57,7 @@ all and deserves a separate blog post.
 ## The Device
 
 I've bought a scanner/printer combo device (_Canon PIXMA TR4551_) with USB and
-WIFI connectivity about one and a half years ago.  It worked OK with my
+Wi-Fi connectivity about one and a half years ago.  It worked OK with my
 previous _Arch_ _Linux_ setup but needed proprietary software and drivers provided
 by the vendor.
 
@@ -74,9 +74,9 @@ services.printing.enable = true;
 ```
 to my `configuration.nix` file.
 
-Turns out this driver works OK with my printer, but there's some pitfalls:
+Turns out this driver works OK with my printer, but there are some pitfalls:
 * The driver allows selecting the print quality in DPI from a drop-down with
-  many many options. Selecting a value that's not well supported by my printer
+  many many options. Selecting a value that's not well-supported by my printer
   causes no error message, but weirdly scaled pages
 * A similar issue arises with the color-profile selection
 * The duplex printing function is inversed
@@ -126,8 +126,8 @@ following the hint in the error message and adding
 nixpkgs.config.allowUnfree = true;
 ```
 to `configuration.nix` indeed solved the problem and the system rebuilt
-successfully. The printer works with the new driver and I'm glad it offers less
-options and therefore less possibilities for me to screw up, but [...]
+successfully. The printer works with the new driver and I'm glad it offers fewer
+options and therefore fewer possibilities for me to screw up, but [...]
 
 ## A Note on Free Software
 
@@ -153,26 +153,25 @@ nixpkgs.config.allowUnfreePredicate = (pkg: builtins.elem
 
 ## USB and Network Printing
 
-The printer offers both USB and WIFI as means of communication. Using the
+The printer offers both USB and Wi-Fi as means of communication. Using the
 _cnijfilter2_ driver _CUPS_ finds the printer via it's USB connection
-automatically, but not via WIFI. Printing via WIFI works after configuring the
+automatically, but not via Wi-Fi. Printing via Wi-Fi works after configuring the
 printer with _CUPS_ manually (`ipp://123.ip.of.printer`), but it would be nice
 to have _CUPS_ auto-detect network printers. Without going into much (I really
 don't know much about auto-discovery of networked devices and just followed the
 clues from the _NixOS_ wiki) here's what I had to add to my `configuration.nix` for _CUPS_
-to automatically find the printer via WIFI:
+to automatically find the printer via Wi-Fi:
 ```nix
 services.avahi.enable = true;
 services.avahi.nssmdns = true;
 ```
-
 > Note: the printer needs to be in the same IP-subnet as the computer for
 auto-discovery to work.
 
 ## Declarative Printer Configuration
 
 I've skipped over the part of actually configuring the printer for this post,
-since I've not done it *the _Nix_ way* yet. Configuring printers declaratively
+since I've not done it _the Nix way_ yet. Configuring printers declaratively
 in _NixOS_ seems to be possible and I'll take a look into that later this week,
 but for now I need a break.
 

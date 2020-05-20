@@ -144,7 +144,7 @@ issue](https://github.com/NixOS/nixpkgs/issues/67830#issuecomment-542933255)
 mentioning the documentation being incorrect and offering a working alternative
 to whitelist individual unfree packages.
 ```nix
-allowUnfreePredicate = (pkg: builtins.elem
+nixpkgs.config.allowUnfreePredicate = (pkg: builtins.elem
   pkg.pname [
     "cnijfilter2"
   ]
@@ -187,7 +187,7 @@ So to summarize, this is the section in my
   services.printing.enable = true;
   services.printing.drivers = [ pkgs.cnijfilter2 ];
 
-  allowUnfreePredicate = (pkg: builtins.elem
+  nixpkgs.config.allowUnfreePredicate = (pkg: builtins.elem
     pkg.pname [
       "cnijfilter2"
     ]
